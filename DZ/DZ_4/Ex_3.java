@@ -11,7 +11,7 @@ import java.util.ArrayDeque;
 // {[()]} = true
 // ()() = true
 // )()( = false
-public class Ex_2 {
+public class Ex_3 {
     public static void main(String[] args) {
         String str = "{[()]}";
         ArrayDeque<Character> deq = new ArrayDeque<>();
