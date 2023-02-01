@@ -31,15 +31,12 @@ public class HomeWork {
             x = x + m1.removeLast();
         }
         int x1 = Integer.parseInt(x);
-        System.out.println(x1);
         for (int i = 1; i <= r2; i++) {
             y = y + m2.removeLast();
         }
         int y1 = Integer.parseInt(y);
-        System.out.println(y1);
         Deque<Integer> mRes =  new ArrayDeque<>();
         int res = x1 * y1;
-        System.out.println(res);
         while(res > 0) {
             mRes.addLast(res%10);
             res = res /10;            
