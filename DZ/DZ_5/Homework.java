@@ -35,13 +35,13 @@ public class Homework {
 
     public static void main(String[] args) {
         Map<Double, String> pb = new HashMap<Double, String>();
-        pb.put(88001122333D, "Иван Иванов");
-        pb.put(88001662333D, "Иван Курицин");
-        pb.put(88001112333D, "Иван Курицин");
-        pb.put(88001122432D, "Иван Незлобин");
-        pb.put(88001112453D, "Сергей Потапов");
-        pb.put(8800142421D, "Сергей Курицин");
-        pb.put(880012343D, "Михаил Незлобин");
+        pb.putIfAbsent(88001122333D, "Иван Иванов");
+        pb.putIfAbsent(88001662333D, "Иван Курицин");
+        pb.putIfAbsent(88001112333D, "Иван Курицин");
+        pb.putIfAbsent(88001122432D, "Иван Незлобин");
+        pb.putIfAbsent(88001112453D, "Сергей Потапов");
+        pb.putIfAbsent(8800142421D, "Сергей Курицин");
+        pb.putIfAbsent(880012343D, "Михаил Незлобин");
         Map<String, Integer> count = new HashMap<String, Integer>();
         count = countName(pb);
         TreeMap<Integer, String> sort = new TreeMap<>(Collections.reverseOrder());
